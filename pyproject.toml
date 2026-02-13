@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=70.0.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dzcb-simple"
+version = "2.0.0"
+description = "Simplified DMR Zone Channel Builder for Anytone 878/890 radios"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Joe (AF1E)", email = "your-email@example.com"},
+    {name = "Original: Masen Furer", email = "m_github@0x26.net"},
+]
+keywords = ["dmr", "ham-radio", "amateur-radio", "anytone", "codeplug"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Ham Radio",
+]
+
+dependencies = [
+    "attrs>=23.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+]
+
+[project.scripts]
+dzcb = "dzcb.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/mycodeplug/dzcb"
+Repository = "https://github.com/mycodeplug/dzcb"
+Issues = "https://github.com/mycodeplug/dzcb/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dzcb = ["data/*.json", "data/*.csv"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']

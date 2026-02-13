@@ -1,0 +1,6 @@
+Zone,Channel Name,Bandwidth,Power,RX Freq,TX Freq,CTCSS Decode,CTCSS Encode,TX Prohibit,APRS RX,APRS PTT Mode,APRS Report Type
+Simplex,146.520,25,High,146.520,146.520,Off,Off,Off,Off,Off,Off
+Simplex,446.000,25,High,446.000,446.000,Off,Off,Off,Off,Off,Off
+APRS,APRS 144.390,25,High,144.390,144.390,Off,Off,Off,On,Both,Analog
+Repeaters;RPTR,W7AW Cougar,25,High,146.760,146.160,103.5,103.5,Off,Off,Off,Off
+Repeaters,WW7SEA Issaquah,25,High,146.820,146.220,103.5,103.5,Off,Off,Off,Off
